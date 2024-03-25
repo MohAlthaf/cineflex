@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFLEX  |   Quiz</title>
+    <link rel="stylesheet" href="css_files/Quiz-Container.css">
+    <link rel="stylesheet" href="css_files/footer.css">
+    <link rel="stylesheet" href="css_files/nav.css">
+
+</head>
+<body onload="NextQuestion(0)">
+    <!-- navigation bar -->
+    <div class="navbar" id="navbar">
+
+        <div class="logo">
+            <a href="start.html">CINEFLIX</a>
+        </div> 
+
+        <nav>
+            <ul>
+                <li><a href="start.html" >Home</a></li>
+                <li><a href="shop.html" class="hide">Buy Products</a></li>
+                <li><a href="comment.html" class="hide">Query Form</a></li>
+                <li><a href="Quiz-container.html" >Quiz</a></li>
+                <li><a href="student-details.html" class="hide">Student Details</a></li>
+                <li><a href="" class="hide">Site Map</a></li>
+                <li><a href="Gallery.html" >Gallery</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+            <div class="modal-content-container">
+                <h1>Congratulations, Quiz Completed.</h1>
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+                <div class="modal-button-container">
+                    <button onclick="restartQuiz()" >Restart</button>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- end of modal of quiz details-->
+
+        <div id="quiz-rules-container">
+            <h1>Quick Quiz</h1>
+            <div id="quiz-rules">
+                <p style="font-size: 28px;">Quiz Rules:</p>
+                <P>1. you have to answer 10 questions.</P>
+                <P>2. Once you select your answer, it can't be undone.</P>
+                <P>3. you must click the answer before entering next.</P>
+                <P>4. You can't exit from the Quiz while you're playing.</P>
+                <p>5. You'll get points on the basis of your correct answers.</p>
+            </div>
+        </div>
+
+        <div class="btnz">
+            <button id="start-button" class="Button" onclick="startQuiz()">START</button>
+        </div>
+
+
+        <div class="game-quiz-container" >
+            <div class="game-details-container" id="x">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+                <h1>Time Left: <span id="time-left"></span> seconds</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+                <div class="modal-container" id="option-modal">
+                    <div class="modal-content-container">
+                    <h1>Please Pick An Option</h1>
+                    <div class="modal-button-container">
+                        <button onclick="closeOptionModal()" >Continue</button>       
+                    </div>
+                </div>
+                </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+            </div>
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()" >Next </button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Page Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>copyright &copy;2023. Designed By <span class="designer">Althaf Mohammed</span></p><br>
+        </div>
+    </footer>
+
+    <script src="js_files/Quiz-container.js"></script>
+</body>
+</html>

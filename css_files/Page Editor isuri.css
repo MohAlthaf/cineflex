@@ -1,0 +1,28 @@
+.pageEditor {
+	text-align: center;
+	background-color: rgba(202, 133, 204, 0.5);
+	border-radius: 20px ;
+
+}
+.image img{
+	object-fit: cover;
+  height: 373px;
+  width: 275px;
+}
+.myDetails {
+	text-align: center;
+	background-color: rgba(202, 133, 204, 0.5);
+	border-radius: 20px ;
+}
+.myTasks {
+	text-align: center;
+	background-color: rgba(202, 133, 204, 0.5);
+	border-radius: 20px ;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	background-image:url(17825816_SL-121019-25870-02.jpg);
+	background-attachment: fixed ;
+	background-size:cover ;
+}

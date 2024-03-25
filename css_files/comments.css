@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: url(cineflex-background.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   
+  button {
+    display: inline-block;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    padding: 10px 50px;
+    margin: 30px 0;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  form{
+      width: 70%;
+    min-height: 450px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  form label{
+      color: #fff;
+  }
+  
+  textarea{
+      resize: none;
+  }
+  
+  

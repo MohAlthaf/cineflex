@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFLIX | Movies Shop </title>
+    <link rel="stylesheet" href="css_files/shop.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css_files/nav.css">
+    <link rel="stylesheet" href="css_files/footer.css">
+</head>
+<body>
+    <div class="content">
+       <div class="navbar">
+
+        <div class="logo">
+            <a href="start.html">CINEFLIX</a>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="start.html" >Home</a></li>
+                <li><a href="shop.html" class="hide">Buy Products</a></li>
+                <li><a href="comment.html" class="hide">Query Form</a></li>
+                <li><a href="Quiz-container.html" >Quiz</a></li>
+                <li><a href="student-details.html" class="hide">Student Details</a></li>
+                <li><a href="" class="hide">Site Map</a></li>
+                <li><a href="Gallery.html" >Gallery</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+        <div class="header">
+            <p class="logo"></p>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="count">0</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p style="color: black;"><b>My Cart</b></p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+                <a href="paymentForm.html"><button id="BuyNow" class="disabled">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+ 
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Page Editor</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>copyright &copy;2023. Designed By <span class="designer">Dewmin</span></p><br>
+        </div>
+    </footer>
+
+    <script src="js_files/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(cineflex-background.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* -----this part for navigation bar----- */
+
+.navbar-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* padding-right: 20px; */
+    transition: all 1s ease-in-out;
+}
+
+.logo-container{
+    flex: 2;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+.logo{
+    color: red;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.menu-container{
+    flex: 8;
+    color: white;
+    font-size: 20px;
+    /* background-color: pink; */
+    transition: all 1s ease-in-out;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -----this part for the content----- */
+
+.content-container{
+    /* background-color: brown; */
+    min-height: calc(100vh - 50px);
+    color: white;   
+    width: 100vw; 
+}
+
+g:hover rect {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+g:hover text {
+    fill: red;
+    font-weight: bold;
+}
+
+/* -----this part for the footer----- */
+
+.footer-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 70px;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.footer-top{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+}

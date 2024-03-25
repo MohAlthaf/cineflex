@@ -1,0 +1,55 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: fixed;
+    background-image: url(cineflex-background.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-size: 80px;
+    padding: 20px;
+}
+
+
+/* Quiz heading */
+
+.quiz-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    text-align: center;
+    width: 100%;
+}
+
+/* quiz button */
+
+.quiz-btn-container{
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin:80px 0;
+    padding: 20px 70px;
+}
+
+.quiz-btn-container:hover{
+    box-shadow:  0 8px 16px 0 rgba(252, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+}
+

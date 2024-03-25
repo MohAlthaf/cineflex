@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  margin:  0;
+  padding: 0;
+}
+
+  /* body{
+    background-image:  fixed;
+    background-image: url(cineflex-background.JPEG);
+    background-size: cover;
+    position: relative;
+  } */
+  html, body{
+    background-color: black;
+    background-position: center;
+    
+    
+    background: url('cineflex-background.JPEG');
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.container{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+  /* container */
+
+.details-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid red;
+    margin: 30px 100px 30px 100px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.details-header{
+    color: white;
+    text-align: center;
+}
+
+.details-header h1{
+    padding: 40px;  
+  }
+
+  /*student  image details */
+  .member-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+  .member {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 240px;
+    overflow: hidden;
+    width: 240px;
+  }
+
+  .member:hover{
+    border: 2px solid red;
+  }
+
+  .member:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .member:hover::after {
+display: none;
+  }
+  .member img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* student name and role container */
+.details{
+  color: white;
+  margin: 0 35px 20px 20px;
+  text-align: center;
+}
+
+  .details p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  @media (max-width: 900px) {
+    nav .hide{
+      display:none;
+    }
+  }

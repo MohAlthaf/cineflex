@@ -1,0 +1,43 @@
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	background-image:url(cineflex-background.JPEG);
+	background-attachment: fixed ;
+	background-size:cover ;
+    text-align: center;
+    color: white;
+}
+
+.pageEditor {
+	text-align: center;
+	background-color: rgb(0, 0, 0.6);
+	border-radius: 20px ;
+}
+
+.user-detail {
+	background-color: rgb(0, 0, 0,0.6);
+	border-radius: 20px ;
+
+}
+
+.user-tasks {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 20px ;
+    padding: 40px;
+}
+.user-tasks-container{
+    padding: 20px;
+}
+
+.page-editor h1{
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: purple;
+}
